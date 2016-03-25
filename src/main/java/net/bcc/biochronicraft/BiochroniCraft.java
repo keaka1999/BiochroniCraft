@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = BiochroniCraft.MODID, name = "BiochroniCraft", version = BiochroniCraft.VERSION, dependencies = "required-after:llibrary@[" + BiochroniCraft.LLIBRARY_VERSION + ",)")
 public class BiochroniCraft {
     public static final String MODID = "biochronicraft";
-    public static final String VERSION = "v0.0.1";
+    public static final String VERSION = "v0.0.2";
     public static final String LLIBRARY_VERSION = "0.9.2";
 
     @Mod.Instance(MODID)
