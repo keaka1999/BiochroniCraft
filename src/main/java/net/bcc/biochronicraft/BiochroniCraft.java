@@ -1,6 +1,9 @@
 package net.bcc.biochronicraft;
 
 import net.bcc.biochronicraft.server.ServerProxy;
+import net.bcc.biochronicraft.server.block.BcCBlockRegistry;
+import net.bcc.biochronicraft.server.item.BcCItemRegistry;
+import net.ilexiconn.llibrary.common.content.ContentHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -20,6 +23,7 @@ public class BiochroniCraft {
 
     @Mod.EventHandler
     public void onPreInit(FMLPreInitializationEvent event) {
+        ContentHelper.init(new BcCBlockRegistry(), new BcCItemRegistry());
         proxy.onPreInit();
     }
 
