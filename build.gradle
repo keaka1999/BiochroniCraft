@@ -22,7 +22,7 @@ version = getVersion("VERSION") + "-1.8.9"
 def llibrary_version = getVersion("LLIBRARY_VERSION")
 group = "net.bcc"
 archivesBaseName = "biochronicraft"
-sourceCompatibility = targetCompatibility = "1.7"
+sourceCompatibility = targetCompatibility = "1.8"
 
 minecraft {
     version = "1.8.9-11.15.1.1722"
